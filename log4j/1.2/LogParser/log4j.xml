@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </layout>
+    </appender>
+    <root>
+        <priority value ="debug" />
+        <appender-ref ref="console" />
+    </root>
+</log4j:configuration>
+
+    /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=63242:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/Users/maonishi/home/repositories/svn/log4j/1.2/apache-log4j-extras/target/test-classes:/Users/maonishi/home/repositories/svn/log4j/1.2/apache-log4j-extras/target/classes:/Users/maonishi/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/maonishi/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/maonishi/.m2/repository/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar:/Users/maonishi/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.0/geronimo-jms_1.1_spec-1.0.jar LogParser
+    2017-12-02 19:21:31,633 INFO  [main] spi.Log4JULogger (Log4JULogger.java:104) - activateOptions
+    2017-12-02 19:21:31,652 DEBUG [LogFilePatternReceiver-plugin] spi.Log4JULogger (Log4JULogger.java:58) - regexp is (\S+-\S+-\S+ \S+:\S+:\S+,\S+)[ ]+(\S*\s*?)[ ]+\[(.*?)\][ ]+(.*?)[ ]+\((.*?):(.*?)\)[ ]+\-[ ]+(.*)
+    2017-12-02 19:21:31,652 INFO  [LogFilePatternReceiver-plugin] spi.Log4JULogger (Log4JULogger.java:104) - attempting to load file: file:///tmp/log
+    1512194022618
+    message 1
+    1512194022624
+    message 2
+    2017-12-02 19:21:33,656 DEBUG [LogFilePatternReceiver-plugin] spi.Log4JULogger (Log4JULogger.java:58) - tailing file
+    2017-12-02 19:21:35,660 DEBUG [LogFilePatternReceiver-plugin] spi.Log4JULogger (Log4JULogger.java:58) - tailing file
+
+    Process finished with exit code 130 (interrupted by signal 2: SIGINT)
+
+
